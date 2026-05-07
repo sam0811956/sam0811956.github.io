@@ -34,6 +34,7 @@ jobs:
       - name: Build Hexo
         run: npm run build
       
+      ## Add .nojekyll to prevent GitHub Pages from ignoring files that start with an underscore
       - name: Add .nojekyll
         run: touch public/.nojekyll
 
